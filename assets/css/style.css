@@ -79,7 +79,7 @@ a { text-decoration: none; }
 img { max-width: 100%; height: auto;}
 
 
-/*------classes------*/
+/*------CLASSES------*/
 .section {  padding: 4rem; }
 .section-title, .section-subtitle { text-align: center; }
 .section-title
@@ -99,7 +99,7 @@ img { max-width: 100%; height: auto;}
 
 
 
-/*------layout------*/
+/*------LAYOUT------*/
 .bd-container
 {
     max-width: 960px;
@@ -121,7 +121,7 @@ img { max-width: 100%; height: auto;}
 }
 
 
-/*------nav------*/
+/*------NAV------*/
 .nav
 {
     max-width: 1024px;
@@ -163,9 +163,153 @@ img { max-width: 100%; height: auto;}
 .nav__toggle { font-size: 1.3rem; cursor: pointer; }
 
 
-/*------show-menu------*/
+/*------SHOW-MENU------*/
 .show-menu
 {
     top: var(--header-height);
     transition: ease-in-out .4s;
 }
+
+
+/*------ACTIVE-MENU------*/
+.active-link
+{
+    color: var(--first-color);
+}
+
+
+/*------Change header's background------*/
+.scroll-header
+{
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+
+
+/*------ScrollToTop Button------*/
+.scrolltop
+{
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    background: rgba(6,156,84,.5);
+    border-radius: .5rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+    visibility: hidden;
+}
+
+
+.scrolltop:hover
+{
+    background: var(--first-color);
+}
+
+
+.scrolltop__icon
+{
+    font-size: 1.8rem;
+    color: var(--body-color);
+}
+
+
+
+/*------Show ScrollToTop Button------*/
+.scroll-top { visibility: visible; bottom: 1.5rem; }
+
+
+/*------HOME------*/
+.home__container
+{
+    height: calc(100vh - var(--header-height));
+    align-content: center;
+}
+
+.home__title
+{
+    font-size: var(--biggest-font-size);
+    color: var(--first-color);
+    margin-bottom: var(--mb-1);
+}
+
+.home__subtitle
+{
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+    margin-bottom: var(--mb-4);
+}
+
+.home__img {  width: 300px; justify-self: center; }
+
+
+/*------BUTTONS------*/
+.button
+{
+    display: inline-block;
+    background: var(--first-color);
+    color: #FFF;
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    transition: .3s;
+}
+
+.button
+{
+    background-color: var(--first-color-alt);
+    transition: .3s;
+    margin-bottom: var(--mb-3);
+}
+
+
+
+/*------ABOUT------*/
+
+.about__data {  text-align: center; }
+.about__description {  margin-bottom: var(--mb-3); }
+.about__img
+{
+    width: 280px;
+    border-radius: 5px;
+    justify-self: center;
+}
+
+
+
+/*------SERVICES------*/
+
+.services__container
+{
+    row-gap: 2.5rem;
+    grid-template-columns: repeat(autofit, minmax(220px, 1fr));
+}
+
+.services__content
+{
+    text-align: center;
+}
+
+.services__img
+{
+    width: 64px;
+    height: 64px;
+    fill: var(--first-color);
+    margin-bottom: var(--mb-2);
+}
+
+.services__title
+{
+    font-size: var(--h3-font-size);
+    color: var(--title-color);
+    margin-bottom: var(--mb-1);
+}
+
+.services__description {  padding: 0 1.5rem; }
+
+
+
+/*------MENU------*/
+
